@@ -16,8 +16,8 @@ def banner():
  \___\___/ \__,_|\___|   \_/\_(_) |_| |_| |_|\___|                                                
     """
     )
-    print(colored("This Is A Basic Ddos Tool By Unknow Personne", 'yellow'))
-    print(colored("Authors: I Dont Know", 'yellow'))
+    print(colored("This Is A Basic Ddos Tool By Unknow Personne", 'random'))
+    print(colored("Authors: I Dont Know", 'random'))
 
 def parse_args():
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
@@ -52,7 +52,7 @@ def get_user_agents(filename: str):
     return user_agents
 
 def get_proxies():
-    URL = "http://www.live-socks.net/2020/05/28-05-20-socks-5-servers.html"
+    URL = "https://raw.githubusercontent.com/carlos-zwin/proxys-socks5/main/proxys.txt"
     req = requests.get(URL, timeout=10)
     content = req.text
     proxies = re.findall(r"(?:[\d]{1,3})\.(?:[\d]{1,3})\.(?:[\d]{1,3})\.(?:[\d]{1,3}):(?:[\d]{1,5})", content)
