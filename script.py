@@ -52,7 +52,7 @@ def get_user_agents(filename: str):
     return user_agents
 
 def get_proxies():
-    URL = "https://www.proxy-list.download/SOCKS5"
+    URL = "http://www.live-socks.net/2020/05/28-05-20-socks-5-servers.html"
     req = requests.get(URL, timeout=10)
     content = req.text
     proxies = re.findall(r"(?:[\d]{1,3})\.(?:[\d]{1,3})\.(?:[\d]{1,3})\.(?:[\d]{1,3}):(?:[\d]{1,5})", content)
